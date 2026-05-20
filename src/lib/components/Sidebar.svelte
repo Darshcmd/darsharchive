@@ -1,6 +1,6 @@
 <script lang="ts">
     import { _ } from "svelte-i18n";
-    import { base } from "$app/paths";
+    import { resolve } from "$app/paths";
     let isOpen = $state(false);
 </script>
 
@@ -27,7 +27,7 @@
 
         <div class="sidebar-title__separator"></div>
 
-        <a class="sidebar-link" href="{base}/about">
+        <a class="sidebar-link" href={resolve("/about")}>
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -39,7 +39,7 @@
             >
             <p>{$_("page.sidebar.about")}</p>
         </a>
-        <a class="sidebar-link" href="{base}/experience">
+        <a class="sidebar-link" href={resolve("/experience")}>
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -51,7 +51,7 @@
             >
             <p>Experience</p>
         </a>
-        <a class="sidebar-link" href="{base}/projects">
+        <a class="sidebar-link" href={resolve("/projects")}>
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -63,7 +63,7 @@
             >
             <p>{$_("page.sidebar.proyects")}</p>
         </a>
-        <a class="sidebar-link" href="{base}/certifications">
+        <a class="sidebar-link" href={resolve("/certifications")}>
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -75,7 +75,7 @@
             >
             <p>{$_("page.sidebar.certifications")}</p>
         </a>
-        <a class="sidebar-link" href="{base}/contact">
+        <a class="sidebar-link" href={resolve("/contact")}>
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
