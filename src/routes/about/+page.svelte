@@ -197,8 +197,7 @@
     }
 
     .property-selector {
-        width: 1.35rem;
-        height: 1.35rem;
+        width: 100%;
         fill: var(--color-fg);
     }
     .property-selector-active {
