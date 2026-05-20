@@ -21,11 +21,10 @@
             image: RailcrackImg,
         },
         {
-        title: "Oasis — Smart IoT Water Cooler System",
-        description:
-            "Hardware prototype built for Ideathon Hackathon: an IoT-enabled water cooler system with TDS monitoring, leak detection, and water level tracking.",
-        image: OasisImg,
-        },
+            title: "IndraSolar: Solar EV Charging Concept",
+            description:
+                "Prototype and presentation for IndraSolar, a sustainable solar-powered EV charging solution developed during the IdeaXChange Hackathon, we secured 3rd position.",
+            image: IndraSolarImg,
         {
             title: "Devfest Jaipur 2025",
             description:
