@@ -1,6 +1,7 @@
 <script lang="ts">
     import Separator from "$lib/components/Separator.svelte";
     import Window from "$lib/components/Window.svelte";
+    import { base } from "$app/paths";
 
     const experiences = [
         {
@@ -184,7 +185,7 @@
             <a class="experience-card" href={experience.link}>
                 <img
                     class="experience-card__img"
-                    src={experience.image}
+                    src={experience.image.startsWith('/') ? base + experience.image : experience.image}
                     alt={experience.organization}
                 />
 
@@ -211,7 +212,7 @@
             <a class="mentor-card" href={mentor.link}>
                 <img
                     class="mentor-card__img"
-                    src={mentor.image}
+                    src={mentor.image.startsWith('/') ? base + mentor.image : mentor.image}
                     alt={mentor.name}
                 />
 

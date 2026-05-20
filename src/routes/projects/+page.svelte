@@ -2,6 +2,7 @@
     import { _ } from "svelte-i18n";
     import Separator from "$lib/components/Separator.svelte";
     import Window from "$lib/components/Window.svelte";
+    import { base } from "$app/paths";
 
     type Category = "All" | "Projects" | "Hackathons" | "Research Paper";
 
@@ -202,7 +203,7 @@
                     <figure class="project-card__image-box">
                         <img
                             class="project-card__image"
-                            src={project.image}
+                            src={project.image.startsWith('/') ? base + project.image : project.image}
                             alt={project.title}
                             loading="lazy"
                         />

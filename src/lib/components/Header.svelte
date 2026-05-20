@@ -2,6 +2,7 @@
     import { get } from "svelte/store";
     import { locale } from "svelte-i18n";
     import { onMount } from "svelte";
+    import { base } from "$app/paths";
     // Images
     import DarshFaceImg from "$lib/assets/images/icon.png";
     import YoutubeIcon from "$lib/assets/svg/youtube.svg";
@@ -62,7 +63,7 @@
         <a aria-label="linkedin" href="https://www.linkedin.com/in/darshsoni04/">
             <img
                 class="social-link social-link-img"
-                src="/assets/icons/linkedin.svg"
+                src="{base}/assets/icons/linkedin.svg"
                 alt=""
             />
         </a>

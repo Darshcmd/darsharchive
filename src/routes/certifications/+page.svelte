@@ -2,6 +2,7 @@
     import { _ } from "svelte-i18n";
     import Separator from "$lib/components/Separator.svelte";
     import Window from "$lib/components/Window.svelte";
+    import { base } from "$app/paths";
 
     const certifications = [
         {
@@ -77,7 +78,7 @@
             <a class="certification-card" href={certification.credential}>
                 <img
                     class="certification-card__img"
-                    src={certification.image}
+                    src={certification.image.startsWith('/') ? base + certification.image : certification.image}
                     alt=""
                 />
 
