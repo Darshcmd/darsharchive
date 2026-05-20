@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Images
-	import MailImg from "$lib/assets/images/contact/mail.png?enhanced";
+	import { resolve } from "$app/paths";
+	import EmailIcon from "$lib/assets/svg/at-svgrepo-com.svg";
 	import StarImg from "$lib/assets/images/star.gif";
 	import GithubIcon from "$lib/assets/svg/github-142-svgrepo-com.svg";
 	import YoutubeIcon from "$lib/assets/svg/youtube.svg";
@@ -21,11 +22,11 @@
 		{#if socialApp === "GitHub"}
 			<img class="svg-icon" src={GithubIcon} alt="GitHub icon" />
 		{:else if socialApp === "LinkedIn"}
-			<img class="svg-icon" src="/assets/icons/linkedin.svg" alt="LinkedIn icon" />
+			<img class="svg-icon" src={resolve("/assets/icons/linkedin.svg")} alt="LinkedIn icon" />
 		{:else if socialApp === "YouTube"}
 			<img class="svg-icon" src={YoutubeIcon} alt="YouTube icon" />
 		{:else if socialApp === "Mail"}
-			<enhanced:img src={MailImg} alt="Email icon" />
+			<img class="svg-icon" src={EmailIcon} alt="Email icon" />
 		{:else if socialApp === "Medium"}
 			<svg class="svg-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
 				<path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM24 12a3.4 3.4 0 01-3.39 3.41A3.4 3.4 0 0117.22 12a3.4 3.4 0 013.39-3.41A3.4 3.4 0 0124 12z"/>
