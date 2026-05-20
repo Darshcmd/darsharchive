@@ -21,10 +21,10 @@
             image: RailcrackImg,
         },
         {
-            title: "PPT round of IdeaXChange Hackathon",
+            title: "AI-Based Railway Safety Patent Project",
             description:
-                "A snapshot from the presentation round of the IdeaXChange hackathon, in which our team secured 3rd position.",
-            image: IndrasolarImg,
+                "Hardware prototype for our patent project focused on railway crack, obstacle, and vibration detection using multi-sensors and AI.",
+            image: RailcrackImg,
         },
         {
             title: "Devfest Jaipur 2025",
@@ -33,15 +33,15 @@
             image: DevfestImg,
         },
         {
-            title: "Hardware prototype of Ideathon Hackathon",
+            title: "Oasis — Smart IoT Water Cooler System",
             description:
-                "We built Oasis, an IoT enabled water cooler system that monitors TDS, tracks water levels, and detects leaks to minimize waste.",
+                "Hardware prototype built for Ideathon Hackathon: an IoT-enabled water cooler system with TDS monitoring, leak detection, and water level tracking.",
             image: OasisImg,
         },
         {
             title: "Working on KP-17",
             description:
-                "My team and I working on KP-17, a 17-degree-of-freedom humanoid robot built for the Team Genesis project showcase.",
+                "My friends and I working on KP-17, a 17-degree-of-freedom humanoid robot built for the Team Genesis project showcase.",
             image: KpImg,
         },
         {
