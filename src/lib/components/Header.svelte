@@ -38,7 +38,7 @@
 </script>
 
 <header>
-    <a href="/" class="titlebar">
+    <a href="{base}" class="titlebar">
         <img class="titlebar-image" src={DarshFaceImg} alt="" />
         <h2 class="subtitle">Darsh</h2>
     </a>

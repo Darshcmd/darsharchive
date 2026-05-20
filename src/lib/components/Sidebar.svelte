@@ -1,5 +1,6 @@
 <script lang="ts">
     import { _ } from "svelte-i18n";
+    import { base } from "$app/paths";
     let isOpen = $state(false);
 </script>
 
@@ -26,7 +27,7 @@
 
         <div class="sidebar-title__separator"></div>
 
-        <a class="sidebar-link" href="/about">
+        <a class="sidebar-link" href="{base}/about">
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -38,7 +39,7 @@
             >
             <p>{$_("page.sidebar.about")}</p>
         </a>
-        <a class="sidebar-link" href="/experience">
+        <a class="sidebar-link" href="{base}/experience">
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -50,7 +51,7 @@
             >
             <p>Experience</p>
         </a>
-        <a class="sidebar-link" href="/projects">
+        <a class="sidebar-link" href="{base}/projects">
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -62,7 +63,7 @@
             >
             <p>{$_("page.sidebar.proyects")}</p>
         </a>
-        <a class="sidebar-link" href="/certifications">
+        <a class="sidebar-link" href="{base}/certifications">
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
@@ -74,7 +75,7 @@
             >
             <p>{$_("page.sidebar.certifications")}</p>
         </a>
-        <a class="sidebar-link" href="/contact">
+        <a class="sidebar-link" href="{base}/contact">
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"

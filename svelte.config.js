@@ -18,10 +18,7 @@ const config = {
             base: "/darsharchive",
         },
         prerender: {
-            handleHttpError: ({ path, referrer, message }) => {
-                if (path.startsWith('/banner')) return;
-                throw new Error(message);
-            }
+            handleHttpError: "warn"
         }
     },
 };
