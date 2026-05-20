@@ -33,7 +33,7 @@
             image: DevfestImg,
         },
         {
-            title: "Oasis — Smart IoT Water Cooler System",
+            title: "Oasis: Smart IoT Water Cooler System",
             description:
                 "Hardware prototype built for Ideathon Hackathon: an IoT-enabled water cooler system with TDS monitoring, leak detection, and water level tracking.",
             image: OasisImg,
