@@ -21,7 +21,7 @@ const config = {
         }),
 
         paths: {
-            base: "/darsharchive",
+            base: "",
             relative: false,
         },
 
