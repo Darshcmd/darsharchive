@@ -3,7 +3,8 @@
     import { resolve } from "$app/paths";
     import { locale } from "svelte-i18n";
     import { onMount } from "svelte";
-    import { base } from "$app/paths";
+    import { resolve } from "$app/paths";
+    //import { base } from "$app/paths";
     // Images
     import DarshFaceImg from "$lib/assets/images/icon.png";
     import YoutubeIcon from "$lib/assets/svg/youtube.svg";
@@ -39,7 +40,7 @@
 </script>
 
 <header>
-    <a href="{base}" class="titlebar">
+    <a href={resolve("/")} class="titlebar">
         <img class="titlebar-image" src={DarshFaceImg} alt="" />
         <h2 class="subtitle">Darsh</h2>
     </a>
