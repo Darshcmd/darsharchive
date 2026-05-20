@@ -25,6 +25,7 @@
             description:
                 "Prototype and presentation for IndraSolar, a sustainable solar-powered EV charging solution developed during the IdeaXChange Hackathon, we secured 3rd position.",
             image: IndraSolarImg,
+        },
         {
             title: "Devfest Jaipur 2025",
             description:
