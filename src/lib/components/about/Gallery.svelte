@@ -15,16 +15,16 @@
 
     const photos: GalleryItem[] = [
         {
-            title: "Patent project under Ashis Tripathy Sir",
-            description:
-                "The hardware component of our patent project: Railway Crack, Object, and Vibration Detection Using Multi-Sensors and AI.",
-            image: RailcrackImg,
-        },
-        {
             title: "AI-Based Railway Safety Patent Project",
             description:
                 "Hardware prototype for our patent project focused on railway crack, obstacle, and vibration detection using multi-sensors and AI.",
             image: RailcrackImg,
+        },
+        {
+        title: "Oasis — Smart IoT Water Cooler System",
+        description:
+            "Hardware prototype built for Ideathon Hackathon: an IoT-enabled water cooler system with TDS monitoring, leak detection, and water level tracking.",
+        image: OasisImg,
         },
         {
             title: "Devfest Jaipur 2025",
