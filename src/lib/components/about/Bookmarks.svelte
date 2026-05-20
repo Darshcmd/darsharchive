@@ -14,7 +14,7 @@
             tag: "archive",
         },
         {
-            title: "Anna's Archieve",
+            title: "Anna's Archive",
             description: "Open library of all the IEEE and other research papers.",
             href: "https://annas-archive.gl",
             tag: "research",
