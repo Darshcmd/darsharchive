@@ -17,6 +17,12 @@ const config = {
         paths: {
             base: "/darsharchive",
         },
+        prerender: {
+            handleHttpError: ({ path, referrer, message }) => {
+                if (path.startsWith('/banner')) return;
+                throw new Error(message);
+            }
+        }
     },
 };
 export default config;
