@@ -3,8 +3,6 @@
     import { resolve } from "$app/paths";
     import { locale } from "svelte-i18n";
     import { onMount } from "svelte";
-    import { resolve } from "$app/paths";
-    //import { base } from "$app/paths";
     // Images
     import DarshFaceImg from "$lib/assets/images/icon.png";
     import YoutubeIcon from "$lib/assets/svg/youtube.svg";
