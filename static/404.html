@@ -5,14 +5,24 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
         // Get the path that was requested
-        const path = window.location.pathname;
+        let path = window.location.pathname;
         
-        // Redirect to the base path with the requested path as a query parameter
-        // This will let your SPA handle the routing
-        if (path !== "/darsharchive/") {
+        // Remove trailing slash for consistency
+        if (path !== "/" && path.endsWith("/")) {
+            path = path.slice(0, -1);
+        }
+        
+        // Only redirect if this isn't already the home page
+        if (path !== "/darsharchive" && path !== "/darsharchive/") {
+            // Remove /darsharchive prefix if present
+            const routePath = path.replace(/^\/darsharchive/, "");
+            // Redirect to home with the requested path as a query parameter
             window.location.replace(
-                "/darsharchive/?redirect=" + encodeURIComponent(path)
+                "/darsharchive/?redirect=" + encodeURIComponent(routePath)
             );
+        } else {
+            // Already at home, just redirect to index
+            window.location.replace("/darsharchive/");
         }
     </script>
 </head>

@@ -17,9 +17,8 @@
         const params = new URLSearchParams(window.location.search);
         const redirect = params.get("redirect");
         if (redirect) {
-            // Remove the base path and navigate
-            const path = redirect.replace("/darsharchive", "");
-            goto(path);
+            // The path is already stripped of base path by 404.html, just navigate
+            goto(redirect || "/");
         }
     });
 </script>
