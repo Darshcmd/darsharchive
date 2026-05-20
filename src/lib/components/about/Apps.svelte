@@ -2,7 +2,7 @@
     import VSCodiumImg from "$lib/assets/images/applications/vscodium.webp?enhanced";
     import Docker from "$lib/assets/images/applications/docker.png?enhanced";
     import Vmware from "$lib/assets/images/applications/vmware.png?enhanced";
-
+    
     import AudaciousImg from "$lib/assets/images/applications/audacious.png?enhanced";
     import ObsidianImg from "$lib/assets/images/applications/obsidian.webp?enhanced";
     import Photoshop from "$lib/assets/images/applications/photoshop.png?enhanced";

@@ -43,6 +43,7 @@
     import tinkercadImg from "$lib/assets/images/tools/tinkercad.png?enhanced";
     import photoshopImg from "$lib/assets/images/tools/photoshop.png?enhanced";
     import davinciImg from "$lib/assets/images/tools/dvinci.png?enhanced";
+    import SvelteImg from "$lib/assets/images/applications/svelte.png?enhanced";
 
 </script>
 
@@ -116,6 +117,10 @@
 
         <div title="ExpressJS" class="tool-entry">
             <enhanced:img src={ExpressImg} alt="" loading="lazy" />
+        </div>
+
+        <div title="Svelte" class="tool-entry">
+            <enhanced:img src={SvelteImg} alt="" loading="lazy" />
         </div>
 
         <!--<div title="Vue" class="tool-entry">
