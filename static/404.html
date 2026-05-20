@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // Get the path that was requested
+        const path = window.location.pathname;
+        
+        // Redirect to the base path with the requested path as a query parameter
+        // This will let your SPA handle the routing
+        if (path !== "/darsharchive/") {
+            window.location.replace(
+                "/darsharchive/?redirect=" + encodeURIComponent(path)
+            );
+        }
+    </script>
+</head>
+<body>
+    Redirecting to the application...
+</body>
+</html>

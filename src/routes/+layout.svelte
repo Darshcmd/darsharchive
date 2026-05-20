@@ -4,11 +4,24 @@
     import { isLoading } from "svelte-i18n";
     import Header from "$lib/components/Header.svelte";
     import Sidebar from "$lib/components/Sidebar.svelte";
+    import { onMount } from "svelte";
+    import { goto } from "$app/navigation";
     // Images
     import FrameImg from "$lib/assets/images/frame.webp";
     import GuraSpinImg from "$lib/assets/images/4x.webp";
 
     let { children } = $props();
+
+    onMount(() => {
+        // Handle redirect from 404 page
+        const params = new URLSearchParams(window.location.search);
+        const redirect = params.get("redirect");
+        if (redirect) {
+            // Remove the base path and navigate
+            const path = redirect.replace("/darsharchive", "");
+            goto(path);
+        }
+    });
 </script>
 
 <div id="app">
