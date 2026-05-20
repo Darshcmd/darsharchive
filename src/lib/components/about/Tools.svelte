@@ -21,7 +21,6 @@
     import JavaImg from "$lib/assets/images/tools/java.webp?enhanced";
     import GoImg from "$lib/assets/images/tools/golang.webp?enhanced";
     import BashImg from "$lib/assets/images/tools/bash.webp?enhanced";
-    import SvelteImg from "$lib/assets/images/tools/svelte.png?enhanced";
     import VueImg from "$lib/assets/images/tools/vue.png?enhanced";
     import AngularImg from "$lib/assets/images/tools/angular.png?enhanced";
     import NextJsImg from "$lib/assets/images/tools/nextjs.png?enhanced";
