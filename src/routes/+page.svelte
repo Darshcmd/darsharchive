@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { resolve } from "$app/paths";
     import { _, format } from "svelte-i18n";
     import WavyText from "$lib/components/WavyText.svelte";
     import Separator from "$lib/components/Separator.svelte";
@@ -93,19 +94,19 @@
         <Card
             icon={"<path d='M16 15a1 1 0 0 1-2 0V8A6 6 0 1 0 2 8v7a1 1 0 0 1-2 0V8a8 8 0 1 1 16 0v7zm-4-3a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm-4 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm-4 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm2-6a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z' fill-rule='evenodd'/>"}
             name={$_("page.home.links.about")}
-            link={"/about"}
+            link={resolve("/about")}
 			newtab={false}
         />
         <Card
             icon={"<path d='M3 1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2V1zm0 5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3z' fill-rule='evenodd'/>"}
             name={$_("page.home.links.projects")}
-            link={"/projects"}
+            link={resolve("/projects")}
 			newtab={false}
         />
         <Card
             icon={"<path d='M 0,0 H 16 V 12 H 4 V 4 h 8 v 6 h 2 V 2 H 2 v 12 h 14 v 2 H 0 Z M 10,10 V 6 H 6 v 4 z'/>"}
             name={$_("page.home.links.certifications")}
-            link={"/certifications"}
+            link={resolve("/certifications")}
 			newtab={false}
         />
         <Card
