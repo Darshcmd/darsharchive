@@ -1,0 +1,139 @@
+/* GLOBALS */
+:root {
+    --color-bg: #31203a;
+    --color-dark: #130f14;
+    --color-fg: #fcfcfc;
+    --color-accent: #d57994;
+    --color-border: #cb94dd;
+    --color-warning: #a145914f;
+
+    --padding-s: 0.5rem;
+    --padding-m: 1rem;
+    --padding-x: 1.5rem;
+    --padding-xl: 3rem;
+    --padding-main-x: clamp(1rem, 15vw, 20rem);
+    --padding-main-y: 3rem;
+
+    --header-height: 4rem;
+    --sidebar-width: 10rem;
+
+    --border-width: 0.15rem;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--color-fg);
+    margin: 0;
+    padding: 0;
+    transition: 0.1s;
+}
+
+body {
+    min-height: 100vh;
+    
+    color: var(--color-fg);
+    background: linear-gradient(var(--color-bg), var(--color-dark)) fixed;
+    background-color: var(--color-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "departure-mono";
+}
+
+main {
+    padding: var(--padding-main-y) var(--padding-main-x);
+}
+
+/* TEXT */
+p {
+    font-size: larger;
+}
+
+a {
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0.1rem;
+}
+a:hover {
+    text-decoration-color: var(--color-accent);
+}
+
+.title {
+    font-family: "vergilia";
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    text-align: center;
+    position: relative;
+}
+
+.subtitle {
+	    font-family: "Chicago 12";
+}
+
+.no-deco {
+    text-decoration: none;
+}
+
+/* BUTTONS */
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    font-family: "departure-mono";
+}
+
+/* RESPONSIVENESS */
+.desktop-only {
+    display: unset !important;
+}
+.mobile-only {
+    display: none !important;
+}
+
+@media screen and (max-width: 980px) {
+    :root {
+        --padding-main-x: 4rem;
+    }
+}
+
+@media screen and (max-width: 728px) {
+	:root {
+        --padding-main-x: 2rem;
+        --padding-main-y: 2rem;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+    .mobile-only {
+        display: unset !important;
+    }
+
+    p {
+        font-size: medium;
+    }
+}
+
+/* FONTS */
+@font-face {
+    font-family: "departure-mono";
+    src: url("$lib/assets/fonts/departure_mono/DepartureMono-Regular.otf");
+}
+@font-face {
+    font-family: "Chicago 12";
+    src: url("$lib/assets/fonts/Chicago-12.ttf");
+}
+@font-face {
+    font-family: "vergilia";
+    src: url("$lib/assets/fonts/vergilia/vergilia.ttf");
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}

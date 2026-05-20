@@ -1,0 +1,53 @@
+{
+    "page": {
+        "sidebar": {
+            "home": "Accueil",
+            "about": "À propos",
+            "proyects": "Projets",
+            "contact": "Contact",
+            "certifications": "Certifications"
+        },
+        "home": {
+            "greeting": [
+                "Bienvenue chez moi •ᴗ•",
+                "N'hésite pas à explorer ! Commence par les trois lignes en bas à gauche.",
+                "Si vous êtes recruteur : Oui, mon CV est à jour. Et oui, je suis prêt à coder de super projets pour vous !",
+                "Apprendre de nouvelles choses et coder sont mes passions préférées !",
+                "Mes langages favoris ? Le C et Python ! (Et le Svelte, bien sûr).",
+                "J'ai grave l'air d'un PNJ avec ces messages...",
+                "Mon tout premier programme était un petit bot écrit en Python... depuis mon téléphone. La galère !",
+                "Ça te plaît ? Clique sur l'icône de mail pour m'envoyer un petit message.",
+                "J'ai aussi un LinkedIn et un GitHub, si tu veux aller y jeter un œil.",
+                "Je parle anglais, hindi... et ça fait 5 ans que j'apprends le français ! Pas mal, non ?"
+            ],
+            "links": {
+                "about": "À propos",
+                "projects": "Projets",
+                "certifications": "Certifications",
+                "resume": "CV",
+                "linkedin": "LinkedIn",
+                "github": "GitHub"
+            }
+        },
+        "about": {
+            "title": "À propos de moi",
+            "stats": {
+                "nick": "Pseudo",
+                "level": "Niveau",
+                "hp": "HP",
+                "mana": "Mana",
+                "rank": "Rang"
+            },
+            "presentation": "Salut, moi c'est Darsh ! Je suis étudiant en informatique (CSE) à VIT Chennai, et je me passionne pour l'IA, la robotique, la recherche, l'IoT, le dev web, et tout ce qui libère ma créativité.<br><br>Mon travail navigue entre software, hardware, communautés, hackathons et idées de recherche qui se transforment peu à peu en vrais projets. (Au passage, mon français est encore un peu fragile, mais je m'y donne à 100 % !)<br><br>Voici mon archive : projets, recherches, certifications, communautés, mentors, et quelques petites choses encore en cours de construction."
+        },
+        "projects": {
+            "title": "Projets"
+        },
+        "certifications": {
+            "title": "Certifications"
+        },
+        "contact": {
+            "title": "Contact"
+        }
+    }
+}

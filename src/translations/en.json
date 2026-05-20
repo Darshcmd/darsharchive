@@ -1,0 +1,53 @@
+{
+    "page": {
+        "sidebar": {
+            "home": "Home",
+            "about": "About",
+            "proyects": "Projects",
+            "contact": "Contact",
+            "certifications": "Certifications"
+        },
+        "home": {
+            "greeting": [
+                "Welcome to my place •ᴗ•",
+                "Feel free to click around! Start with the three lines on bottom left.",
+                "If you're a recruiter: Yes, my resume is fully updated, and yes, I'm ready to build cool things for you!",
+                "Learning new things and coding are my favorite hobbies!",
+                "My favorite languages are C and Python!",
+                "I look like an NPC with these messages...",
+                "My first program was a tiny bot written in Python... From my phone.",
+                "If you like what you see, hit that email icon.",
+                "I also have a LinkedIn and GitHub, if you wanna check those out.",
+                "I can speak English, Hindi and French."
+            ],
+            "links": {
+                "about": "About Me",
+                "projects": "Projects",
+                "certifications": "Certifications",
+                "resume": "Resume",
+                "linkedin": "LinkedIn",
+                "github": "GitHub"
+            }
+        },
+        "about": {
+            "title": "About me",
+            "stats": {
+                "nick": "Nick",
+                "level": "Level",
+                "hp": "HP",
+                "mana": "Mana",
+                "rank": "Rank"
+            },
+            "presentation": "Hey, I'm Darsh, a CSE student at VIT Chennai working around AI, ML, robotics, IoT, and web development.<br><br>I enjoy turning ideas into working projects, whether that means writing code, building hardware prototypes, experimenting at hackathons, or shaping research into something useful.<br><br>This is my archive: projects, research work, certifications, communities, mentors, and a few things still under construction."
+        },
+        "projects": {
+            "title": "Projects"
+        },
+        "certifications": {
+            "title": "Certifications"
+        },
+        "contact": {
+            "title": "Contact"
+        }
+    }
+}
