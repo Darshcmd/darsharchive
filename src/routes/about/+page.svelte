@@ -67,7 +67,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <path
-                        d="M0 0h14v2h2v14H0V0zm2 2v12h12V4h-1.998V2H2zm2 6h8v2H4V8zm0-4h6v2H4V4z"
+                        d="M8 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z"
                         fill-rule="evenodd"
                     />
                 </svg>
@@ -84,7 +84,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <path
-                        d="M0 0h16v16H0V0zm2 2v2h2V2H2zm4 0v2h8V2H6zM2 6v8h12V6H2z"
+                        d="M2 2h12v12H2V2zm2 2v2l2 2-2 2v2l4-4-4-4zm5 6h3V8H9v2z"
                         fill-rule="evenodd"
                     />
                 </svg>
@@ -101,7 +101,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <path
-                        d="M0 0h7v7H0V0zm2 2v3h3V2H2zM0 9h7v7H0V9zm9-9h7v7H9V0zm2 2v3h3V2h-3zM9 9h7v7H9V9zm2 2v3h3v-3h-3zm-9 0v3h3v-3H2z"
+                        d="M1 1h5v5H1V1zm0 9h5v5H1v-5zm9-9h5v5h-5V1zm0 9h5v5h-5v-5z"
                         fill-rule="evenodd"
                     />
                 </svg>
@@ -118,7 +118,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <path
-                        d="M8 8v5h4V8h-2V6H8v2zm-8 8h16V0H0v16zm2-2V2h12v12H2zM8 4h2V2H8v2zm2 2h2V4h-2v2zm-1 6v-2h2v2H9z"
+                        d="M1 2h14v12H1V2zm2 2v8h10V4H3zm2 6 2-2 2 2 3-3 1 1v2H5zM6 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
                         fill-rule="evenodd"
                     />
                 </svg>
@@ -152,7 +152,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <path
-                        d="M0 2h16v12H0V2zm2 2v8h12V4H2zm2 2h2v2H4V6zm3 0h2v2H7V6zm3 0h2v2h-2V6z"
+                        d="M8 0 9.5 6.5 16 8l-6.5 1.5L8 16 6.5 9.5 0 8l6.5-1.5L8 0z"
                         fill-rule="evenodd"
                     />
                 </svg>
@@ -197,7 +197,8 @@
     }
 
     .property-selector {
-        width: 100%;
+        width: 1.35rem;
+        height: 1.35rem;
         fill: var(--color-fg);
     }
     .property-selector-active {

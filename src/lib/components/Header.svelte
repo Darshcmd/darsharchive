@@ -49,18 +49,15 @@
             <img class="social-link social-link-img" src={EmailIcon} alt="" />
         </a>
 
-        <!-- svelte-ignore a11y_invalid_attribute -->
-        <a aria-label="github" href="https://github.com/Darshcmd">
+        <a aria-label="github" href="https://github.com/Darshcmd" target="_blank" rel="noreferrer">
             <img class="social-link social-link-img" src={GithubIcon} alt="" />
         </a>
 
-        <!-- svelte-ignore a11y_invalid_attribute -->
-        <a aria-label="youtube" href="https://www.youtube.com/@dxrsh">
+        <a aria-label="youtube" href="https://www.youtube.com/@dxrsh" target="_blank" rel="noreferrer">
             <img class="social-link social-link-img" src={YoutubeIcon} alt="" />
         </a>
 
-        <!-- svelte-ignore a11y_invalid_attribute -->
-        <a aria-label="linkedin" href="https://www.linkedin.com/in/darshsoni04/">
+        <a aria-label="linkedin" href="https://www.linkedin.com/in/darshsoni04/" target="_blank" rel="noreferrer">
             <img
                 class="social-link social-link-img"
                 src={resolve("/assets/icons/linkedin.svg")}

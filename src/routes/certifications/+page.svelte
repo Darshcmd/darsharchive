@@ -9,7 +9,7 @@
             title: "Winter Space Internship Certificate",
             issuer: "India Space Labs, BSERC & IIT Madras",
             issued: "May 2026",
-            credential: "https://www.linkedin.com/in/darshsoni04/details/experience/",
+            credential: "https://www.linkedin.com/in/darshsoni04/",
             image: "/assets/certifications/spaceinter.png",
         },
         {
@@ -37,7 +37,7 @@
             title: "Google Student Ambassador",
             issuer: "Google Gemini & Communique",
             issued: "Jan 2025",
-            credential: "https://www.linkedin.com/in/darshsoni04/details/experience/",
+            credential: "https://www.linkedin.com/in/darshsoni04/",
             image: "/assets/certifications/google-student-ambassador.png",
         },
         {

@@ -76,3 +76,10 @@ The homepage Resume button points directly to `/resume.pdf`. Add the real file a
 `src/translations/en.json`, `src/translations/fr.json`, and `src/translations/hi.json`: Labels, homepage greeting text, about text, and route titles.
 
 `src/app.html`: SEO/social metadata. Replace placeholder URL fields when the site has a final domain.
+
+
+rm -rf build .svelte-kit
+pnpm build
+git add .
+git commit -m "add umami analytics"
+git push

@@ -45,7 +45,7 @@
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
                 ><path
-                    d="M0 0h14v2h2v14H0V0zm2 2v12h12V4h-1.998V2H2zm2 6h8v2H4V8zm0-4h6v2H4V4z"
+                    d="M6 1h4v2h5v12H1V3h5V1zm1 2h2V2H7v1zM3 5v2h10V5H3zm0 4v4h10V9h-3v1H6V9H3z"
                     fill-rule="evenodd"
                 /></svg
             >
@@ -57,7 +57,7 @@
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
                 ><path
-                    d="M8 8v5h4V8h-2V6H8v2zm-8 8h16V0H0v16zm2-2V2h12v12H2zM8 4h2V2H8v2zm2 2h2V4h-2v2zm-1 6v-2h2v2H9z"
+                    d="M5.5 3 0 8l5.5 5 1.4-1.5L3 8l3.9-3.5L5.5 3zm5 0L9.1 4.5 13 8l-3.9 3.5 1.4 1.5L16 8l-5.5-5z"
                     fill-rule="evenodd"
                 /></svg
             >
@@ -69,7 +69,7 @@
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
                 ><path
-                    d="M0 0h14v2h2v14H0V0zm2 2v12h12V4h-1.998V2H2zm2 6h8v2H4V8zm0-4h6v2H4V4z"
+                    d="M8 0 10 2.2l3-.4.6 3L16 6.5l-1.4 2.7.5 3-3 .6-2 2.2L8 13.8 5.9 15l-2-2.2-3-.6.5-3L0 6.5l2.4-1.7.6-3 3 .4L8 0zm0 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
                     fill-rule="evenodd"
                 /></svg
             >
