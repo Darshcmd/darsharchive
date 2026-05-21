@@ -6,7 +6,7 @@
     import OasisImg from "$lib/assets/images/projects/oasis.png";
     import RailcrackImg from "$lib/assets/images/projects/railcrack.png";
     import TrafficImg from "$lib/assets/images/projects/traffic.png";
-    import ZouImg from "$lib/assets/images/projects/zou.png";
+    import ZouImg from "$/lib/assets/images/projects/zou.png";
 
     type GalleryItem = {
         title: string;
@@ -24,7 +24,7 @@
         {
             title: "ZOUGOULOUGOUBAMBA event",
             description:
-                "A snapshot from the closing ceremony of the Indo-French inter-country events, where I served on the event management team.".
+                "A snapshot from the closing ceremony of the Indo-French inter-country events, where I served on the event management team.",
             image: ZouImg,
         },
         {
