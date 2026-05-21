@@ -6,6 +6,7 @@
     import OasisImg from "$lib/assets/images/projects/oasis.png";
     import RailcrackImg from "$lib/assets/images/projects/railcrack.png";
     import TrafficImg from "$lib/assets/images/projects/traffic.png";
+    import ZouImg from "$lib/assets/images/projects/zou.png";
 
     type GalleryItem = {
         title: string;
@@ -21,16 +22,22 @@
             image: RailcrackImg,
         },
         {
-            title: "IndraSolar: Solar EV Charging Concept",
+            title: "ZOUGOULOUGOUBAMBA event",
             description:
-                "Prototype and presentation for IndraSolar, a sustainable solar-powered EV charging solution developed during the IdeaXChange Hackathon, we secured 3rd position.",
-            image: IndrasolarImg,
+                "A snapshot from the closing ceremony of the Indo-French inter-country events, where I served on the event management team.".
+            image: ZouImg,
         },
         {
             title: "Devfest Jaipur 2025",
             description:
                 "An amazing event hosted by GDG Jaipur, where I had the opportunity to connect with so many brilliant minds.",
             image: DevfestImg,
+        },
+        {
+            title: "IndraSolar: Solar EV Charging Concept",
+            description:
+                "Prototype and presentation for IndraSolar, a sustainable solar-powered EV charging solution developed during the IdeaXChange Hackathon, we secured 3rd position.",
+            image: IndrasolarImg,
         },
         {
             title: "Oasis: Smart IoT Water Cooler System",
