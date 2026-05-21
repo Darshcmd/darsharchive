@@ -60,7 +60,7 @@
         {
             title: "IoT 3-way Traffic Light system",
             description:
-                "As part of our DSD project, we developed a 3-way traffic light system utilizing multiple sensors. Our team was honored with the 'Best Project' award and selected for the project showcase.",
+                "As part of our DSD project, we developed a 3-way traffic light system utilizing multiple sensors. Our team was honored as the 'Best Project' and selected for the project showcase.",
             image: TrafficImg,
         },
     ];
