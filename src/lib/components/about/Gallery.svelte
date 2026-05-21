@@ -6,7 +6,7 @@
     import OasisImg from "$lib/assets/images/projects/oasis.png";
     import RailcrackImg from "$lib/assets/images/projects/railcrack.png";
     import TrafficImg from "$lib/assets/images/projects/traffic.png";
-    import ZouImg from "$/lib/assets/images/projects/zou.png";
+    import ZouImg from "$lib/assets/images/projects/zou.png";
 
     type GalleryItem = {
         title: string;
