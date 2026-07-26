@@ -1,4 +1,5 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from "@sveltejs/adapter-auto";
+import adapterStatic from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 /** @type {import("@sveltejs/kit").Config} */
@@ -12,10 +13,12 @@ const config = {
     },
 
     kit: {
-        adapter: adapter({
-            pages: "build",
-            fallback: "index.html",
-        }),
+        adapter: process.env.VERCEL
+            ? adapter()
+            : adapterStatic({
+                  pages: "build",
+                  fallback: "index.html",
+              }),
 
         paths: {
             base: "",
