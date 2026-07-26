@@ -1,6 +1,6 @@
 <script lang="ts">
     import { get } from "svelte/store";
-    import { resolve } from "$app/paths";
+    import { base, resolve } from "$app/paths";
     import { locale } from "svelte-i18n";
     import { onMount } from "svelte";
     // Images
@@ -60,7 +60,7 @@
         <a aria-label="linkedin" href="https://www.linkedin.com/in/darshsoni04/" target="_blank" rel="noreferrer">
             <img
                 class="social-link social-link-img"
-                src={resolve("/assets/icons/linkedin.svg")}
+                src={`${base}/assets/icons/linkedin.svg`}
                 alt=""
             />
         </a>

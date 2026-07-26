@@ -8,18 +8,30 @@
             "certifications": "Certifications"
         },
         "home": {
-            "greeting": [
-                "Welcome to my place •ᴗ•",
-                "Feel free to click around! Start with the three lines on bottom left.",
-                "If you're a recruiter: Yes, my resume is fully updated, and yes, I'm ready to build cool things for you!",
-                "Learning new things and coding are my favorite hobbies!",
-                "My favorite languages are C and Python!",
-                "I look like an NPC with these messages...",
-                "My first program was a tiny bot written in Python... From my phone.",
-                "If you like what you see, hit that email icon.",
-                "I also have a LinkedIn and GitHub, if you wanna check those out.",
-                "I can speak English, Hindi and French."
-            ],
+        "greeting": [
+            "Boot sequence complete. I know everything about Darsh. He only knows most of it.",
+            "Welcome! Ask me anything about Darsh before he awkwardly explains it himself.",
+            "Loading portfolio... this may take 0.3 seconds or 4 years depending on your Wi-Fi.",
+            "Recruiter detected. Switching from chaos mode to professional mode.",
+            "Scanning GitHub... yep, there are way too many commits.",
+            "Hi! I'm the Darsh's AI intern. Unlike human interns, I work weekends.",
+            "This portfolio was handcrafted. I was added later because apparently humans like chatbots.",
+            "Warning: Asking about projects may result in excessive enthusiasm.",
+            "Need to know if Darsh can build your idea? Ask below.",
+            "Darsh sometimes responds faster than me, hit that email icon above.",
+            "Tip: Try asking 'What has Darsh built?' It's one of my favourite topics.",
+            "Hello, mysterious internet traveller. What would you like to know about Darsh?",
+            "I'm basically Ctrl+F for Darsh's entire career.",
+            "Don't worry, I don't hallucinate... much.",
+            "Fun fact: This conversation has fewer bugs than most production code.",
+            "Achievement unlocked: You opened Darsh's portfolio. +10 curiosity.",
+            "Current mission: Proving you that Darsh is worth hiring.",
+            "I'm faster than scrolling through a résumé. Go ahead, ask anything.",
+            "No subscriptions. No ads. Just Darsh and an AI with unlimited opinions.",
+            "If I don't know the answer, I'll blame the cache.",
+            "Welcome to the Darsh Cinematic Universe. Every project has a backstory.",
+            "Status: Online. Humour module: Enabled. Professionalism module: Mostly enabled."
+        ],
             "links": {
                 "about": "About Me",
                 "projects": "Projects",

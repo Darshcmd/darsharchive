@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Images
-	import { resolve } from "$app/paths";
+	import { base } from "$app/paths";
 	import EmailIcon from "$lib/assets/svg/at-svgrepo-com.svg";
 	import StarImg from "$lib/assets/images/star.gif";
 	import GithubIcon from "$lib/assets/svg/github-142-svgrepo-com.svg";
@@ -22,7 +22,7 @@
 		{#if socialApp === "GitHub"}
 			<img class="svg-icon" src={GithubIcon} alt="GitHub icon" />
 		{:else if socialApp === "LinkedIn"}
-			<img class="svg-icon" src={resolve("/assets/icons/linkedin.svg")} alt="LinkedIn icon" />
+			<img class="svg-icon" src={`${base}/assets/icons/linkedin.svg`} alt="LinkedIn icon" />
 		{:else if socialApp === "YouTube"}
 			<img class="svg-icon" src={YoutubeIcon} alt="YouTube icon" />
 		{:else if socialApp === "Mail"}

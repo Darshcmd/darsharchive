@@ -2,8 +2,7 @@
     const {
         maxSlots,
         usedSlots,
-        level,
-    }: { maxSlots: number; usedSlots: number; level: number } = $props();
+    }: { maxSlots: number; usedSlots: number } = $props();
 </script>
 
 <div class="spell-container">
@@ -49,10 +48,6 @@
             >
         {/each}
     </div>
-
-    <div class="spell-separator mobile-only"></div>
-
-    <p>L{level}</p>
 </div>
 
 <style>
@@ -66,13 +61,6 @@
     .spell {
         display: flex;
         gap: var(--padding-s);
-    }
-
-    .spell-separator {
-        height: 0.1rem;
-        width: 100%;
-        opacity: 0.5;
-        background-color: var(--color-fg);
     }
 
     /* RESPONSIVENESS */
