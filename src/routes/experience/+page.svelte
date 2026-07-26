@@ -101,7 +101,7 @@
             name: "Dr. Natarajan B",
             role: "Associate Professor, Computer Science",
             organization: "Vellore Institute of Technology, Chennai",
-            image: "https://media.licdn.com/dms/image/v2/D5603AQHbk4bQH-2HjA/profile-displayphoto-scale_400_400/B56ZzUMegFKcAg-/0/1773086567718?e=1780531200&v=beta&t=MLF_AYFiphG_Xs-BDu6YNXCL6l4dUWwCsucgRDcsTAM",
+            image: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=lW5xp2QAAAAJ&citpid=6",
             link: "#"
         },
         {
