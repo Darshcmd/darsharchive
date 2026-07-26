@@ -98,13 +98,6 @@
 
     const mentors = [
         {
-            name: "Dr. Natarajan B",
-            role: "Associate Professor, Computer Science",
-            organization: "Vellore Institute of Technology, Chennai",
-            image: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=lW5xp2QAAAAJ&citpid=6",
-            link: "#"
-        },
-        {
             name: "Dr. Ashis Tripathy",
             role: "Associate Professor, Computer Science",
             organization: "Vellore Institute of Technology, Chennai",
@@ -113,10 +106,24 @@
             action: "View LOR"
         },
         {
+            name: "Dr. Natarajan B",
+            role: "Associate Professor, Computer Science",
+            organization: "Vellore Institute of Technology, Chennai",
+            image: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=lW5xp2QAAAAJ&citpid=6",
+            link: "#"
+        },
+        {
+            name: "Dr. Manas Ranjan Prusty",
+            role: "Associate Professor, Computer Science",
+            organization: "Vellore Institute of Technology, Chennai",
+            image: "https://i1.rgstatic.net/ii/profile.image/272535338090517-1441988896383_Q128/Manas-Prusty.jpg",
+            link: "#"
+        },
+        {
             name: "Dr. Rishikeshan CA",
             role: "Associate Professor, Computer Science",
             organization: "Vellore Institute of Technology, Chennai",
-            image: "https://media.licdn.com/dms/image/v2/D5603AQG4Sv4_1TkK8Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683280454030?e=1780531200&v=beta&t=zXoLgnEzQrJeUg9jDTOtuHDSsSn1FWJymnrRNUlOR0s",
+            image: "https://i1.rgstatic.net/ii/profile.image/655629551165440-1533325674382_Q128/C-A-Rishikeshan.jpg",
             link: "#"
         },
         {
@@ -130,35 +137,14 @@
             name: "Prashanth S.",
             role: "Senior Solution Engineer, GDG Jaipur",
             organization: "Google",
-            image: "https://media.licdn.com/dms/image/v2/D5603AQEPs_DnGSy5uQ/profile-displayphoto-crop_800_800/B56ZyeCOauGoAI-/0/1772177911727?e=1780531200&v=beta&t=9w3YGWqJkzUON85ikKgArDxCVnj9unh5rBTPTRqrA-o",
+            image: "https://media.licdn.com/dms/image/v2/D5603AQEPs_DnGSy5uQ/profile-displayphoto-scale_200_200/B56ZyeCOauGoAY-/0/1772177911816?e=2147483647&v=beta&t=hpk5o38O26d_PIIwZcyva1Pd1jLd87CveqmVKKTR-Io",
             link: "#"
         },
         {
             name: "Paresh Mayani",
             role: "CEO, GDG Jaipur",
             organization: "SolGuruz®",
-            image: "https://media.licdn.com/dms/image/v2/D4D03AQH3IPgAVzOxbQ/profile-displayphoto-shrink_800_800/B4DZOm90mbG4Ac-/0/1733673045039?e=1780531200&v=beta&t=ljKh0ISRDtXN1KXnstCQ-VC9czxQJvCMAjwF9LO7GGI",
-            link: "#"
-        },
-        {
-            name: "Nikhilesh Tayal",
-            role: "Google Developer Expert",
-            organization: "GDG Jaipur",
-            image: "https://media.licdn.com/dms/image/v2/C4D03AQH7EmXni8BSxA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516530846965?e=1780531200&v=beta&t=FRSEICMGet-doVxThuLnVIimbxMH2R1XE8caba5dmPY",
-            link: "#"
-        },
-        {
-            name: "Anukriti Bansal",
-            role: "Google Developer Expert",
-            organization: "GDG Jaipur",
-            image: "https://media.licdn.com/dms/image/v2/D4D03AQGLg4q9-Bj-Kg/profile-displayphoto-shrink_800_800/B4DZPSro4yHcAg-/0/1734406475810?e=1780531200&v=beta&t=go2xxrrke_mYhUJUWfxiI88QCipUp5gde373ufMnUwY",
-            link: "#"
-        },
-        {
-            name: "Gaurav Kheterpal",
-            role: "Community & Leadership",
-            organization: "GDG Jaipur",
-            image: "https://media.licdn.com/dms/image/v2/C4D03AQHjdGMbtvJX7A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1649855428696?e=1780531200&v=beta&t=s8D0WSBbfszCmo5a5Qc9VCyD7QwZUxcKnkZqVmTCK3g",
+            image: "https://media.licdn.com/dms/image/v2/D4D03AQH3IPgAVzOxbQ/profile-displayphoto-shrink_200_200/B4DZOm90mbG4AY-/0/1733673045001?e=2147483647&v=beta&t=ewzfqia8VdM-9yqBGyeLirvK-lyi81eLBXVojokJzPU",
             link: "#"
         },
         {
