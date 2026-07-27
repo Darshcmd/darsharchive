@@ -6,6 +6,10 @@
     import Card from "$lib/components/index/Card.svelte";
     // Images
     import KimuGithubImg from "$lib/assets/images/darshmain.webp?enhanced";
+    import { darshSystemPrompt } from "$lib/darshContext";
+
+    const HF_TOKEN = "hf_YOUR_TOKEN_HERE";
+    const HF_MODEL = "TinyLlama/TinyLlama-1.1B-Chat-v1.0";
 
     const messages: string[] = $i18nJson("page.home.greeting") as string[];
     const visitorPrompts: string[] = [
@@ -75,21 +79,44 @@
         answer = "Thinking through the archive...";
 
         try {
-            const response = await fetch(resolve("/api/darsh"), {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ question: trimmedQuestion }),
-            });
+            const response = await fetch(
+                `https://api-inference.huggingface.co/models/${HF_MODEL}`,
+                {
+                    method: "POST",
+                    headers: {
+                        Authorization: `Bearer ${HF_TOKEN}`,
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        inputs: `${darshSystemPrompt}\n\nUser: ${trimmedQuestion}\nAssistant:`,
+                        parameters: {
+                            max_new_tokens: 220,
+                            temperature: 0.35,
+                        },
+                    }),
+                }
+            );
 
-            const data = (await response.json()) as { answer?: string };
-            answer =
-                data.answer || "I could not find an answer in the archive yet.";
+            const data = await response.json();
+
+            if (data.error) {
+                answer = "The AI model is warming up. Try again in a moment.";
+            } else {
+                const generatedText = Array.isArray(data)
+                    ? data[0]?.generated_text
+                    : data?.generated_text;
+
+                answer = generatedText
+                    ? generatedText
+                          .split("Assistant:")
+                          .pop()
+                          ?.trim() || generatedText.trim()
+                    : "I could not find an answer in the archive yet.";
+            }
             question = "";
         } catch {
             answer =
-                "I could not connect to Gemini right now. Try again in a moment.";
+                "I could not connect to the AI right now. Try again in a moment.";
         } finally {
             isLoading = false;
         }
