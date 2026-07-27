@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-auto";
+import adapter from "@sveltejs/adapter-vercel";
 import adapterStatic from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
@@ -14,7 +14,9 @@ const config = {
 
     kit: {
         adapter: process.env.VERCEL
-            ? adapter()
+            ? adapter({
+                  runtime: "nodejs20.x",
+              })
             : adapterStatic({
                   pages: "build",
                   fallback: "index.html",
