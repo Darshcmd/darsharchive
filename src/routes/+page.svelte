@@ -6,22 +6,9 @@
     import Card from "$lib/components/index/Card.svelte";
     // Images
     import KimuGithubImg from "$lib/assets/images/darshmain.webp?enhanced";
-    import { darshSystemPrompt } from "$lib/darshContext";
-
-    const HF_TOKEN = "hf_YOUR_TOKEN_HERE";
-    const HF_MODEL = "TinyLlama/TinyLlama-1.1B-Chat-v1.0";
+    import { getAnswer } from "$lib/chatEngine";
 
     const messages: string[] = $i18nJson("page.home.greeting") as string[];
-    const visitorPrompts: string[] = [
-        "Curious what I can build? Ask me about my projects!",
-        "Hiring? Ask about my experience and skills!",
-        "Want to know what tech I work with? Just ask!",
-        "Looking for a developer? Ask me about my work!",
-        "Wondering if I'd be a good fit? Ask me anything!",
-        "Need someone who builds cool stuff? Ask away!",
-        "Recruiters welcome — ask me about my stack!",
-        "Think I could help your team? Ask me about my projects!",
-    ];
 
     let currentMessage = $state(0);
     let question = $state("");
@@ -68,7 +55,7 @@
         }
     }
 
-    async function askDarsh() {
+    function askDarsh() {
         const trimmedQuestion = question.trim();
 
         if (!trimmedQuestion || isLoading) return;
@@ -76,50 +63,14 @@
         stopAutoRotate();
         isLoading = true;
         isChatMode = true;
-        answer = "Thinking through the archive...";
+        answer = "Searching the archive...";
 
-        try {
-            const response = await fetch(
-                `https://api-inference.huggingface.co/models/${HF_MODEL}`,
-                {
-                    method: "POST",
-                    headers: {
-                        Authorization: `Bearer ${HF_TOKEN}`,
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                        inputs: `${darshSystemPrompt}\n\nUser: ${trimmedQuestion}\nAssistant:`,
-                        parameters: {
-                            max_new_tokens: 220,
-                            temperature: 0.35,
-                        },
-                    }),
-                }
-            );
-
-            const data = await response.json();
-
-            if (data.error) {
-                answer = "The AI model is warming up. Try again in a moment.";
-            } else {
-                const generatedText = Array.isArray(data)
-                    ? data[0]?.generated_text
-                    : data?.generated_text;
-
-                answer = generatedText
-                    ? generatedText
-                          .split("Assistant:")
-                          .pop()
-                          ?.trim() || generatedText.trim()
-                    : "I could not find an answer in the archive yet.";
-            }
-            question = "";
-        } catch {
-            answer =
-                "I could not connect to the AI right now. Try again in a moment.";
-        } finally {
+        // Use a brief delay to show the loading state, then answer instantly
+        setTimeout(() => {
+            answer = getAnswer(trimmedQuestion);
             isLoading = false;
-        }
+            question = "";
+        }, 300);
     }
 
     function onChatSubmit(event: Event) {
